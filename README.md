@@ -24,7 +24,6 @@ underwater image datasets show that our approach can successfully enhance underw
 
 ## Network Architecture
 
-<img src = "1z.png"> 
 
 ## Installation and Data Preparation
 
@@ -60,6 +59,9 @@ python test.py
 之后有空再上传预训练模型和可视化结果（谷歌云太难用了，之前弄过没弄好）。如果您喜欢我们的工作，SFGnet对您的研究能有帮助，小趴菜在这里恳请大大们引用一下~~谢谢各位路过的官人啦啦啦啦啦啦~
 
 PS:把环境装好（非常基本非常简单），准备好数据（训练集和测试机），就可以直接运行，我在上传前已经测试过了，木有bug~~~~
+PS:搞了一个晚上不知道怎么用git上床github，中间最终上传的时候一直报这个错误：fatal: unable to access 'https://github.com/zhihefang/SFGNet.git/': Failed to connect to github.com port 443 after 21076 ms: Couldn't connect to server.完全不知道怎么解决，如果有大佬知道怎么解决，留言一下（我之前上传过一次，不知道这次怎么就不行了，救命阿）。最终我是通过github网页一个个上传文件夹的。
+
+另外，训练集的文件结构是/data/train,下面有两个子文件夹，分别是input和target。测试机是/data/test,跟训练集一样。
 
 
 
