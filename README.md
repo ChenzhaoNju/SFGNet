@@ -8,8 +8,8 @@ Chen Zhao, Weiling Cai, Chenyu Dong and Ziqi Zeng
 
 > **Abstract:** *Underwater images suffer from complex and diverse degradation,
 which inevitably affects the performance of underwater visual tasks.
-However, most existing learning-based underwater image enhancement (UIE) methods mainly restore such degradations in the spatial
-domain, and rarely pay attention to the fourier frequency information. In this paper, we develop a novel UIE framework based on
+However, most existing learning-based underwater image enhancement (UIE) methods mainly restore such degradations in the spatial
+domain, and rarely pay attention to the fourier frequency information. In this paper, we develop a novel UIE framework based on
 spatial-frequency interaction and gradient maps, namely SFGNet,
 which consists of two stages. Specifically, in the first stage, we
 propose a dense spatial-frequency fusion network (DSFFNet),
@@ -19,7 +19,7 @@ interaction by cross connections between these two blocks. In
 the second stage, we propose a gradient-aware corrector (GAC)
 to further enhance perceptual details and geometric structures of
 images by gradient map. Experimental results on two real-world
-underwater image datasets show that our approach can successfully enhance underwater images, and achieves competitive performance in visual quality improvement.* 
+underwater image datasets show that our approach can successfully enhance underwater images, and achieves competitive performance in visual quality improvement.* 
 <hr />
 
 ## Network Architecture
