@@ -6,7 +6,6 @@ import time
 from tqdm import tqdm
 import argparse
 from torch import nn
-from SSIM import SSIM
 from SFGnet import SFGNet,Vgg,FFTLoss,Get_gradient,AFFTLoss
 import torch.optim as optim
 from torch.autograd import Variable
