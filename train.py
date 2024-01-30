@@ -51,7 +51,7 @@ if __name__ == '__main__':
     model = SFGNet(H=H,W=W,batch_size=opt.batchSize)
 
     ######### Loss ###########
-    criterion = SSIM()
+    #criterion = SSIM()
     criterion1 = nn.L1Loss()
     criterion2 = nn.MSELoss()
     
@@ -63,7 +63,7 @@ if __name__ == '__main__':
 
     if opt.use_GPU:
         model = model.cuda()
-        criterion.cuda()
+        #criterion.cuda()
         criterion1.cuda()
         FFT.cuda()
         AFFT.cuda()
@@ -176,8 +176,8 @@ if __name__ == '__main__':
             best_psnr = epoch_psnr
         if best_ssim<epoch_ssim:
             best_ssim = epoch_ssim
-        #lossgg=0
-        #lossgg==epoch_lossg / len(train_loader)
+        lossgg=0
+        lossgg==epoch_lossg / len(train_loader)
         print("=========epoch:%d"%epoch,"========epoch PSNR:%f"%epoch_psnr,"========best PSNR:%f"%best_psnr,"========best SSIM:%f"%best_ssim)
         torch.save(model.state_dict(), os.path.join(opt.save_weights, 'net_epoch%d.pth' % (epoch+1)))
         torch.save(model.state_dict(), os.path.join(opt.save_weights, 'net_last.pth'))
